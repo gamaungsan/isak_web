@@ -30,17 +30,22 @@ main {
   justify-content: space-between;
 }
 
+marquee{
+  background-color: grey;
+}
+
+
+
 .header-info{
   flex: 1;
   padding: 10px;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   max-height: 40px;
   overflow: hidden;
   color: white;
   background-color: grey;
-  padding-right: 16vw;
+  
 }
 
 .menu {
