@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isak Lahtaw</title>
+    <link rel='stylesheet' href='styles.css'/>
+</head>
+<body>
+    <main>
+        <div class="header">
+            <div class="header-info">
+                OPEN MON-SUN 7AM - 8PM. 📞(904) 437 - 2322
+            </div>
+            <div id="menu" class="menu">
+                <img src="assets/images/logo.png" alt="LOGO">
+                <div class="select">
+                    <a href="#home">HOME</a>
+                    <a href="#services">SERVICES</a>
+                    <a href="#gallery">GALLERY</a>
+                    <a href="#reviews">REVIEW</a>
+                    <a href="#contact">CONTACT US</a>
+                </div>    
+            </div>
+            
+        </div>
+        <div id="home" class="home">
+            <h2>Mobile Detailing!</h2>
+            <span>Quality Results. At an Affordable Price!</span>
+            <div class="buttons">
+                <button>About Us</button>
+                <button>Contact Us</button>
+            </div>
+        </div>
+        <div id="services" class="services">
+            <div class="service">Exterior Wash</div>
+            <div class="service">Interior Clean</div>
+            <div class="service">Headlight Restoration</div>
+            <div class="service">Seat Shampoo or Carpet Cleaning</div>
+        </div>
+        <div id="gallery" class="gallery"><h2>Before and After</h2></div>
+        <div  id="reviews" class="reviews">
+            <h2>Reviews</h2>
+
+        </div>
+        <div id="contact" class="contact">
+            <h2>Contact us!</h2>
+            <form action="POST">
+                <div class="name-field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+                </div>
+                
+                <div class="email-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+                </div>
+
+                <div class="subject-field">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject">
+                </div>
+
+                <div class="service-field">
+                    <label for="stype">Service Type</label>
+                    <select name="stype" id="stype">
+                        <option value="exwash">Exterior Wash</option>
+                        <option value="inclean">Interior Cleaning</option>
+                        <option value="headresto">Headlight Restoration</option>
+                        <option value="shampoocarpet">Seat Shampoo or Carpet Clean</option>
+                    </select>
+                </div>
+
+                <div class="description-field">
+                    <label for="description">Description</label>
+                    <textarea name="description" id="description" ></textarea>
+                </div>
+
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </div>
+
+        <div class="footer">
+            <span>Copyright &copy 2023 Overtime Auto Detailing</span>
+        </div>
+    </main>
+</body>
+</html>
