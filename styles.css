@@ -12,7 +12,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 
 main {
@@ -23,7 +22,7 @@ main {
 
 .header {
   background-color: black;
-  width: 100%;
+  width: 100vw;
   display: flex;
   overflow: hidden;
   flex-direction: column;
@@ -33,6 +32,8 @@ main {
 marquee{
   background-color: grey;
 }
+
+
 
 
 
@@ -72,6 +73,23 @@ marquee{
   height: 120px;
 }
 
+.toggle{
+  cursor: pointer;
+  font-size: 2rem;
+  height: 120px;
+  width: 80px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  display: none;
+}
+
+.toggle svg{
+  fill: white;
+}
+
+
+
 .menu a:hover{
   background-color: grey;
 }
@@ -85,6 +103,23 @@ h2{
   font-size: 3rem;
 }
 
+
+.dropdown{
+  position: absolute;
+  top: 161px;
+  background-color: grey;
+  font-size: .5rem;
+  width: 100vw;
+  display: none;
+}
+
+.dropdown a{
+  height: 10px;
+}
+
+.dropdown a:hover{
+  background-color: black;
+}
 
 .home {
   display: flex;
@@ -245,4 +280,68 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 740px){
+  body{
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  .select a{
+    display: none;
+  }
+
+  .menu {
+    padding-left: 0;
+    padding-right: 10px;
+  }
+
+  .toggle{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+  }
+
+  .toggle svg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .open {
+    display: block;
+  }
+
+
+  button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  input{
+    height: 30px;
+    width: 250px;
+  }
+
+  select{
+    height: 30px;
+    width: 250px;
+  }
+
+  textarea{
+    width: 250px;
+  }
+
+  .header, .services, .gallery, .reviews, .contact, .footer{
+    width: 100vw;
+  }
 }
