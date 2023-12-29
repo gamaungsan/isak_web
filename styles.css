@@ -12,6 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 main {
@@ -285,10 +286,11 @@ textarea {
 
 
 @media only screen and (max-width: 740px){
-  body{
+  html, body{
     width: 100vw;
     overflow-x: hidden;
   }
+
   .select a{
     display: none;
   }
