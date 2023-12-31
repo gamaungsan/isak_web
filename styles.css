@@ -34,8 +34,26 @@ marquee{
   background-color: grey;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+/* Scrollbar END */
 
 
 .header-info{
@@ -107,15 +125,16 @@ h2{
 
 .dropdown{
   position: absolute;
-  top: 161px;
+  top: 160px;
   background-color: grey;
-  font-size: .5rem;
+  font-size: .7rem;
   width: 100vw;
   display: none;
 }
 
 .dropdown a{
-  height: 10px;
+  height: 15px;
+  padding: 20px;
 }
 
 .dropdown a:hover{
@@ -130,6 +149,7 @@ h2{
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
   gap: 5vh;
 }
 
@@ -188,8 +208,8 @@ button:hover{
   color: white;
 }
 
-.contact{
-  height: 90vh;
+.contact-container{
+  height: 95vh;
   padding-left: 15vw;
   padding-right: 15vw;
   display: flex;
@@ -198,7 +218,7 @@ button:hover{
 }
 
 form {
-  padding-top: 50px;
+  padding-top: 20px;
   display: grid;
   justify-content: center;
   grid-template-columns: 350px 300px;
@@ -207,7 +227,7 @@ form {
 }
 
 input {
-  height: 30px;
+  height: 25px;
   font-family: 'Times New Roman', Times, serif;
   font-size: 1.2rem;
   padding-left: 5px;
@@ -273,10 +293,8 @@ textarea {
 }
 
 .footer{
-  height: 10vh;
+  height: 50px;
   background-color: black;
-  padding-left: 15vw;
-  padding-right: 15vw;
   color: white;
   display: flex;
   align-items: center;
@@ -343,7 +361,7 @@ textarea {
     width: 250px;
   }
 
-  .header, .services, .gallery, .reviews, .contact, .footer{
+  .header, .services, .gallery, .reviews, .contact-container, .footer{
     width: 100vw;
   }
 }
