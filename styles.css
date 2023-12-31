@@ -370,7 +370,7 @@ textarea {
 .carousel-button.next {
   right: 1rem;
 }
-
+/* Carousel END */
 
 .review-container {
   overflow-y: auto;
@@ -385,7 +385,7 @@ textarea {
 }
 
 
-/* Carousel END */
+
 
 .gallery h2{
   margin-top: 5vh;
