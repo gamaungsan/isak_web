@@ -303,7 +303,6 @@ textarea {
 }
 
 
-/* Carousel */
 .carousel {
   width: 70vw;
   height: 70vh;
@@ -370,7 +369,6 @@ textarea {
 .carousel-button.next {
   right: 1rem;
 }
-/* Carousel END */
 
 .review-container {
   overflow-y: auto;
