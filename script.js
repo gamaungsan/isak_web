@@ -12,7 +12,7 @@ dropdown.addEventListener('click', function(){
 function sendEmail(e){
     e.preventDefault();
     (function(){
-        emailjs.init("service_d1px6ek")
+        emailjs.init("fUu5PCTZKC_RM6lNx")
     })();
 
     var params = {
@@ -24,7 +24,7 @@ function sendEmail(e){
         date: new Date().toLocaleString(),
     };
 
-    var serviceId = 'service_h2h9w7j';
+    var serviceId = 'service_d1px6ek';
     var templateId = 'template_j0b2cb2';
 
     emailjs.send(serviceId, templateId, params)
